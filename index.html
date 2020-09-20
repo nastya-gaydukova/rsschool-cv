@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+</head>
+<body>
+<div style="padding: 60px 200px 60px 200px;">
+
+  <style>
+    .line-size {
+      font-size: 18px;
+      line-height: 0px;
+    }
+  </style>
+
+  <table>
+    <tr class="line-size">
+      <td><strong>Name</strong></td>
+      <td>Anastasiya Gaydukova</td>
+      <td rowspan="7"><img src="фото.jpg" alt="my photo" width="254" height="313"></td>
+    </tr>
+
+    <tr class="line-size">
+      <td><strong>Date of birth</strong></td>
+      <td>1st of March 1996</td>
+    </tr>
+
+    <tr class="line-size">
+      <td><strong>Address</strong></td>
+      <td>139a Bogdanovicha St, apt. 150, Minsk, 220123, Belarus</td>
+    </tr>
+
+    <tr class="line-size">
+      <td><strong>Phone number</strong></td>
+      <td>+375-29-1097482</td>
+    </tr>
+
+    <tr class="line-size">
+      <td><strong>Email</strong></td>
+      <td>asya.grunberg@gmail.com</td>
+    </tr>
+
+    <tr class="line-size">
+      <td><strong>Marital status</strong></td>
+      <td>Single</td>
+    </tr>
+
+    <tr class="line-size">
+      <td><strong>Nationality</strong></td>
+      <td>Belarusian</td>
+    </tr>
+  </table>
+  <br>
+
+  <style>
+    .line-height {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  </style>
+
+  <h2>Objective</h2>
+  <p class="line-height">I want to obtain a position as a front-end developer in company epam. My knowledge of
+    programming, English level, experience, character achieving company’s goals.</p>
+  <br>
+  <h2>Education</h2>
+  <p class="line-height">Belarussian State University, department of biology, 5th year student (2016-2021).</p>
+  <br>
+  <h2>Qualifications</h2>
+  <ul class="line-height">
+    <li>July 2017 – October 2018: English courses in International House, finished B2 level.</li>
+    <li>November 2018 – January 2019: programming in Python courses at TeachMeSkills, Minsk, Belarus.</li>
+    <li>February 2020 – March 2020: programming in C++ at Institute of Business of BSU, Minsk, Belarus.</li>
+    <li>Certificates on Stepik: “Programming on Python”, “Basics of Statistics”.</li>
+    <li>Coursework in bioinformatics: “Identification of 5'-non-translated regions in human RNA molecules”.</li>
+  </ul>
+
+  <br>
+  <h2>Personal qualities</h2>
+  <p class="line-height">I am а quick learner, hardworking and open to change. Able to prioritize and adapt well to new
+    situations.</p>
+  <br>
+  <h2>Skills</h2>
+  <p class="line-height">Languages:</p>
+  <ul class="line-height">
+    <li>Native Russian</li>
+    <li>Fluent Belorussian</li>
+    <li>Upper-Intermediate English</li>
+  </ul>
+  <p class="line-height">Basic knowledge of Python, C++, R, statistics, command line.</p>
+  <p class="line-height">In-depth knowledge of Excel, Word.</p>
+  <br>
+  <h2>Code examples</h2>
+
+  <p class="line-height">1. A program that can encrypt and decrypt a substitution cipher. The program accepts input two
+    lines of the same length, the first line contains the characters of the original alphabet, the second line contains
+    the characters of the final alphabet, after which there is a line that needs to be encrypted with the transmitted
+    key, and another line that needs to be decrypted.</p>
+
+  <!-- HTML generated using hilite.me -->
+  <div
+    style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+    style="margin: 0; line-height: 125%">beg <span style="color: #333333">=</span> <span
+    style="color: #007020">input</span>()
+end <span style="color: #333333">=</span> <span style="color: #007020">input</span>()
+s_1 <span style="color: #333333">=</span> <span style="color: #007020">input</span>()
+s_2 <span style="color: #333333">=</span> <span style="color: #007020">input</span>()
+dict_beg <span style="color: #333333">=</span> {}
+dict_cipher <span style="color: #333333">=</span> {}
+index_beg <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+index_end <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> beg:
+    dict_beg[i] <span style="color: #333333">=</span> end[index_beg]
+    index_beg <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> end:
+    dict_cipher[i] <span style="color: #333333">=</span> beg[index_end]
+    index_end <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+s_1_end <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;&#39;</span>
+s_2_end <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;&#39;</span>
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> s_1:
+    i <span style="color: #333333">=</span> dict_beg[i]
+    s_1_end <span style="color: #333333">=</span> s_1_end <span style="color: #333333">+</span> i
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> s_2:
+    i <span style="color: #333333">=</span> dict_cipher[i]
+    s_2_end <span style="color: #333333">=</span> s_2_end <span style="color: #333333">+</span> i
+<span style="color: #008800; font-weight: bold">print</span>(s_1_end)
+<span style="color: #008800; font-weight: bold">print</span>(s_2_end)
+</pre>
+  </div>
+
+  <br>
+  <p class="line-height">2. The program that reads the string, encodes it with the suggested compression algorithm and
+    outputs the encoded sequence to standard output. Coding is done as follows: s = 'aaaabbсaa' is converted to
+    'a4b2с1a2', that is, groups of identical characters in the original string are replaced with this character and the
+    number of its repetitions in this position of the string.</p>
+
+  <!-- HTML generated using hilite.me -->
+  <div
+    style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+    style="margin: 0; line-height: 125%">s <span style="color: #333333">=</span> <span
+    style="color: #007020">input</span>(<span style="background-color: #fff0f0">&#39;&#39;</span>)
+previous <span style="color: #333333">=</span> s[<span style="color: #0000DD; font-weight: bold">0</span>]
+a <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+b <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;&#39;</span>
+<span style="color: #008800; font-weight: bold">for</span> current <span
+      style="color: #000000; font-weight: bold">in</span> s:
+    <span style="color: #008800; font-weight: bold">if</span> previous <span style="color: #333333">==</span> current:
+        a <span style="color: #333333">=</span> a <span style="color: #333333">+</span> <span
+      style="color: #0000DD; font-weight: bold">1</span>
+    <span style="color: #008800; font-weight: bold">if</span> previous <span style="color: #333333">!=</span> current:
+        b <span style="color: #333333">=</span> b <span style="color: #333333">+</span> previous <span
+      style="color: #333333">+</span> <span style="color: #007020">str</span>(a)
+        a <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+        previous <span style="color: #333333">=</span> current
+b <span style="color: #333333">=</span> b <span style="color: #333333">+</span> current <span
+      style="color: #333333">+</span> <span style="color: #007020">str</span>(a)
+<span style="color: #008800; font-weight: bold">print</span>(b)
+</pre>
+  </div>
+
+  <br>
+  <p class="line-height">3. The program that outputs a rhombus of a given diagonal.</p>
+  <!-- HTML generated using hilite.me -->
+  <div
+    style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+    style="margin: 0; line-height: 125%">i <span style="color: #333333">=</span> <span
+    style="color: #0000DD; font-weight: bold">1</span>
+n <span style="color: #333333">=</span> <span style="color: #007020">int</span>(<span
+      style="color: #007020">input</span>())
+r <span style="color: #333333">=</span> <span style="color: #007020">int</span>((n <span style="color: #333333">-</span> <span
+      style="color: #0000DD; font-weight: bold">1</span>) <span style="color: #333333">/</span> <span
+      style="color: #0000DD; font-weight: bold">2</span>)
+<span style="color: #008800; font-weight: bold">while</span> i <span style="color: #333333">&lt;</span> n:
+    x <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;&#39;</span>
+    <span style="color: #008800; font-weight: bold">for</span> k <span
+      style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(r):
+        x <span style="color: #333333">=</span> x <span style="color: #333333">+</span> <span
+      style="background-color: #fff0f0">&#39; &#39;</span>
+    <span style="color: #008800; font-weight: bold">for</span> k <span
+      style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(i):
+        x <span style="color: #333333">=</span> x <span style="color: #333333">+</span> <span
+      style="background-color: #fff0f0">&#39;*&#39;</span>
+    i <span style="color: #333333">=</span> i <span style="color: #333333">+</span> <span
+      style="color: #0000DD; font-weight: bold">2</span>
+    r <span style="color: #333333">=</span> r <span style="color: #333333">-</span> <span
+      style="color: #0000DD; font-weight: bold">1</span>
+    <span style="color: #008800; font-weight: bold">print</span>(x)
+i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+c <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+<span style="color: #008800; font-weight: bold">while</span> n <span style="color: #333333">&gt;=</span> i:
+    x <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;&#39;</span>
+    <span style="color: #008800; font-weight: bold">for</span> k <span
+      style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(c):
+        x <span style="color: #333333">=</span> x <span style="color: #333333">+</span> <span
+      style="background-color: #fff0f0">&#39; &#39;</span>
+    <span style="color: #008800; font-weight: bold">for</span> k <span
+      style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(n):
+        x <span style="color: #333333">=</span> x <span style="color: #333333">+</span> <span
+      style="background-color: #fff0f0">&#39;*&#39;</span>
+    n <span style="color: #333333">=</span> n <span style="color: #333333">-</span> <span
+      style="color: #0000DD; font-weight: bold">2</span>
+    c <span style="color: #333333">=</span> c <span style="color: #333333">+</span> <span
+      style="color: #0000DD; font-weight: bold">1</span>
+    <span style="color: #008800; font-weight: bold">print</span>(x)
+</pre>
+  </div>
+
+</div>
+</body>
+</html>
